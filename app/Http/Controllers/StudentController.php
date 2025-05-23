@@ -78,9 +78,7 @@ class StudentController extends Controller
             'email' => $request->email,
             'age' => $request->age,
         ];
-
         $this->writeCsv($students);
-
         return redirect('/')->with('success', 'Student added!');
     }
 
